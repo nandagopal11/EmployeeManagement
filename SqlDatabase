@@ -1,0 +1,33 @@
+create database projectgroup5;
+ use projectgroup5;
+ 
+ create table employeedetails(Employee_Id int primary key not null,FirstName varchar(20),LastName varchar(20),Gender varchar(10),Age int,DOJ date,Email varchar(20),Job_Title varchar(40),BU varchar(20),Job_location varchar(20),Salary double(7,2),Contact_No int(10));
+ select * from employeedetails;
+ 
+ 
+ create table employeedetails(
+employee_id int not null primary key,
+first_name varchar(30),
+last_name varchar(30),
+gender varchar(10),
+contact_no varchar(10),
+email varchar(20),
+age int(3),
+manager_id int(7),
+business_unit varchar(30),
+job_title varchar(30),
+salary double(7,2),
+date_of_joining date
+);
+
+insert into employeedetails values(234352,'Arun','Kumar','Male','9456382716','arun@outlook.com',27,182345,'Insurance','Programming Analyst',35000,'2015-02-18');
+insert into employeedetails values(234353,'Jyothi','Kumari','Female','8675462376','jyothi123@gmail.com',25,182346,'Transport','Junior Developer',28000,'2016-10-02');
+insert into employeedetails values(234354,'Rakesh','Tiwari','Male','6538291090','rakesh@gmail.com',26,182347,'Communication','Java Developer',30000,'2016-07-28');
+insert into employeedetails values(234355,'John','Pulikkattil','Male','8085237896','pkjohn@hotmail.com',30,182345,'Insurance','Full Stack Developer',40000,'2012-04-10');
+
+create table EmployeeManager(username varchar(20) primary key,pass varchar(20));
+
+insert into employeemanager value("sooraj","sooraj@123");
+insert into employeemanager value("devaraj","dev@321");
+
+
